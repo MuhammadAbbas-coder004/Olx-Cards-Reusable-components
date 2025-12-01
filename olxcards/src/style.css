@@ -5,7 +5,7 @@
   text-align: center;
 }
 
-/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +17,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* MAIN WRAPPER */
+
 .wrapper {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,7 +25,7 @@ body {
   min-height: 100vh;
 }
 
-/* ================= NAVBAR ================= */
+
 .navbar {
   width: 100vw;
   height: 80px;
@@ -43,11 +43,11 @@ body {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-/* ====== LOGO ====== */
+
 .logo {
   font-weight: bold;
   font-size: 35px;
-  background: linear-gradient(90deg,#4a00e0,#8e2de2);
+  background: linear-gradient(90deg,#4a00e0,#910291);
   -webkit-background-clip: text;
   color: transparent;
   cursor: pointer;
@@ -55,10 +55,10 @@ body {
 }
 
 .logo:hover {
-  transform: translateY(-3px) scale(1.1);
+  transform: translateY(-3px) scale(1.30);
 }
 
-/* ====== NAV LINKS ====== */
+
 .nav-links {
   display: flex;
   gap: 30px;
@@ -74,10 +74,10 @@ body {
 
 .nav-links a:hover {
   color: #4a00e0;
-  transform: translateY(-4px);
+  transform: translateY(-3px)scale(1.40);
 }
 
-/* ====== SEARCH BAR BIGGER ====== */
+
 .search-box input {
   padding: 10px 20px;
   border-radius: 10px;
@@ -93,24 +93,26 @@ body {
   box-shadow: 0 0 12px rgba(74,0,224,0.4);
 }
 
-/* ====== SELL BUTTON HOVER ====== */
+
 .sell-btn {
   padding: 9px 25px;
   border-radius: 25px;
-  border: 2px solid black;
+  border:  1px solid black;
+  
   font-weight: bold;
   cursor: pointer;
   background: rgba(255,255,255,0.2);
   transition: 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 .sell-btn:hover {
-  transform: translateY(-4px) scale(1.08);
+  transform: translateY(-3px) scale(1.25);
   background: black;
   color: white;
 }
 
-/* ================= CARDS SECTION ================= */
+
 .cards-section {
   width: 100%;
   padding: 25px;
@@ -118,20 +120,21 @@ body {
   grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
   gap: 25px;
   justify-items: center;
+  
 }
 
-/* CARD TRANSPARENT */
+
 .card {
   width: 270px;
   padding: 12px;
   border-radius: 15px;
-
+  cursor: pointer;
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.3);
-
+border: 1px solid rgba(255,255,255,0.3);
   box-shadow: 0 8px 22px rgba(0,0,0,0.2);
   transition: 0.3s ease;
+  
 }
 
 .card:hover {
@@ -139,19 +142,19 @@ body {
   box-shadow: 0 15px 35px rgba(0,0,0,0.25);
 }
 
-/* ================= FIXED IMAGE — NEVER OVERFLOW ================= */
+
 .product-img {
   width: 100%;
   height: 200px;
-  object-fit: cover;       /* perfect crop — no stretch */
-  object-position: center; /* center focus */
+  object-fit: cover;       
+  object-position: center; 
   border-radius: 12px;
   background: #ddd;
   overflow: hidden;
   display: block;
 }
 
-/* TEXT */
+
 .card-title {
   font-size: 20px;
   font-weight: bold;
@@ -174,7 +177,7 @@ body {
   margin-top: 5px;
 }
 
-/* ================= RESPONSIVE ================= */
+
 @media(max-width:900px){
   .navbar {
     flex-wrap: wrap;

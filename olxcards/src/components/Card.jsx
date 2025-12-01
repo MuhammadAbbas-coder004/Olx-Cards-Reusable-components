@@ -1,17 +1,13 @@
 import React from 'react'
-
+import { Heart } from 'lucide-react';
 const Card = (props) => {
   console.log(props);
   
   return (
     
-        <div className="card">
-          <img
-            src={props.img}
-            alt="Civic"
-            className="product-img"
-          />
-
+        <div className="card">                         
+          <img src={props.img} alt="Civic" className="product-img"  />
+          <Heart />  
           <h1 className="card-title"> {props.productname} </h1>
           <p className="card-desc">  {props.category} </p>
           <h3 className="card-color"> {props.color} </h3>
